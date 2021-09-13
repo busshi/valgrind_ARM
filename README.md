@@ -1,10 +1,12 @@
-# VALGRIND ON ARM PROCESSOR WITH DOCKER
+### VALGRIND ON ARM PROCESSOR WITH DOCKER
 
 
-Usage: /bin/bash valgrind_docker.sh [PROJECT_PATH] [BINARY_FILE_TO_RUN]
+- Usage:
+/bin/bash valgrind_docker.sh [PROJECT_PATH] [BINARY_FILE_TO_RUN]
 
 
-Cleaning/purge: ./valgrind_docker.sh clean
+- Cleaning/purge:
+./valgrind_docker.sh clean
 
 
-You can change commands to run in the entrypoint.sh...
+Note: You can change commands to run in the entrypoint.sh...
