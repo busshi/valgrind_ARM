@@ -19,7 +19,7 @@ Note: You can change commands to run in the entrypoint.sh...
 Examples:
 - with a Makefile:
 	- ./valgrind_docker.sh ../CPP/CPP/cpp00/ex00
-	-- ./valgrind_docker.sh ../CPP/CPP/cpp00/ex00 "hello goodbye"
+	- ./valgrind_docker.sh ../CPP/CPP/cpp00/ex00 "hello goodbye"
 
 - without Makefile but with compilation:
 	- ./valgrind_docker.sh ../exam_rank04 microshell.c "/bin/ls ; echo hello ; /bin/echo hello whats up ? | /usr/bin/wc -c"
