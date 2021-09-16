@@ -9,7 +9,7 @@ case "$1" in
 esac
 
 
-[ -z "$1" -o -z "$2" ] && { echo "Usage: ./valgrind_docker.sh [PATH_TO_PROJECT] [BINARY_NAME_TO_RUN]"; exit 1; }
+[ -z "$1" ] && { echo "Usage: ./valgrind_docker.sh [PATH_TO_PROJECT] [ARGUMENTS <optionnal>]"; exit 1; }
 
 
 DIR="$1"
