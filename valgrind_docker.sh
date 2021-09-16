@@ -15,13 +15,15 @@ esac
 DIR="$1"
 PROJECT=$( echo ${DIR} | rev | cut -d"/" -f1 | rev )
 
-BIN="$2"
+ARG1="$2"
+
+ARG2="$3"
 
 cp -r ${DIR} .
 
 cp Dockerfile.sample Dockerfile
 
-echo "ENTRYPOINT	[ \"/bin/bash\", \"entrypoint.sh\", \"${BIN}\" ]" >> Dockerfile
+echo "ENTRYPOINT	[ \"/bin/bash\", \"entrypoint.sh\", \"${ARG1}\", \"${ARG2}\" ]" >> Dockerfile
 
 docker build --build-arg DIR=${PROJECT} -t valgrind:latest .
 docker run -it --rm valgrind
